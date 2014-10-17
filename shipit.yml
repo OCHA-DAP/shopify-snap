@@ -1,6 +1,6 @@
 dependencies:
   override: []
 
-  deploy:
-    override:
-        - push-to-heroku shopify-snap
+deploy:
+  override:
+    - push-to-heroku shopify-snap
