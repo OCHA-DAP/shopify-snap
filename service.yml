@@ -1,6 +1,6 @@
 ---
 # https://services.shopify.io/services/shopify-snap/production
-director: dneufeld
+director: jacklar
 owners:
-- Shopify/dev-acceleration
+- @Shopify/support-dev
 classification: tier3
