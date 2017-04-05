@@ -4,3 +4,6 @@ director: jacklar
 owners:
 - @Shopify/support-dev
 classification: tier3
+security:
+  data_management:
+    contains_pii: true
