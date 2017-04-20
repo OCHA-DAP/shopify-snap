@@ -1,7 +1,7 @@
 # https://services.shopify.io/services/shopify-snap/production
 director: jacklar
 owners:
-- @Shopify/support-dev
+- Shopify/support-dev
 classification: tier3
 security:
   data_management:
