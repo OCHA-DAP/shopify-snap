@@ -8,9 +8,9 @@
  */
 var args = require('system').args;
 // system.args[0] is the script name
-var basePath = args.args[1] || '/tmp/';
-var port  = args.args[2] || 3001;
-var defaultViewportSize = args.args[3] || '';
+var basePath = args[1] || '/tmp/';
+var port  = args[2] || 3001;
+var defaultViewportSize = args[3] || '';
 
 defaultViewportSize = defaultViewportSize.split('x');
 defaultViewportSize = {
