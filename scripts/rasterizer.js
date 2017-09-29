@@ -7,6 +7,7 @@
  * This starts an HTTP server waiting for screenshot requests
  */
 var args = require('system').args;
+// system.args[0] is the script name
 var basePath = args.args[1] || '/tmp/';
 var port  = args.args[2] || 3001;
 var defaultViewportSize = args.args[3] || '';
