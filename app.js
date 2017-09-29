@@ -31,6 +31,7 @@ app.configure('development', function() {
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 require('./routes')(app, config.server.useCors);
+var host = process.env.HOST || config.server.host || '127.0.0.1';
 var port = process.env.PORT || config.server.port || 3000;
-app.listen(port);
-console.log('Express server listening on port ' + port);
+app.listen(port, host);
+console.log('Express server listening on ' + host + ':' + port);
