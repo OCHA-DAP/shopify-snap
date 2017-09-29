@@ -49,7 +49,7 @@ module.exports = function(app, useCors) {
 
   app.get('*', function(req, res, next) {
     // for backwards compatibility, try redirecting to the main route if the request looks like /www.google.com
-    res.redirect('/image.png?url=' + req.url.substring(1));
+    res.redirect('/image.png' + req.url.substring(1));
   });
 
   // bits of logic
