@@ -17,10 +17,11 @@ RUN apk add -U \
     npm cache clean && \
     rm -rf /var/cache/apk/* && \
     adduser -h /srv -s /bin/ash -D -u 4000 -g 4000 appuser && \
-    chown -R appuser /srv && \
-    su - appuser -c "npm install"
+    chown -R appuser /srv
 
 USER appuser
+
+RUN npm install
 
 CMD node app
 
